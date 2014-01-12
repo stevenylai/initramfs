@@ -41,7 +41,7 @@ uuidlabel_root() {
 }
 
 # Mount the root filesystem.
-(modprobe wl && modprobe r8168 && modprobe nvidia && uuidlabel_root) || rescue_shell
+uuidlabel_root || rescue_shell
 
 # Clean up.
 umount /proc
